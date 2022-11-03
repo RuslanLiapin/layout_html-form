@@ -13,27 +13,29 @@
         <legend class="title-input">Personal information</legend>
         <label class="questions">Surname:
           <input type="text" id="sur"
-          autocomplete="off"
+          autocomplete="off" name="surname"
           >
         </label>
         <label class="questions">Name:
           <input type="text"
           autocomplete="off"
-          id="name"
+          id="name" name="name"
           >
         </label>
         <label class="questions">How old are You?
           <input type="number" id="age"
           min="1" max="100"
-          value="12"
+          value="12" name="age"
           >
         </label>
         <label class="questions">Full date of birth:
-          <input type="date" required>
+          <input type="date" required
+          name="dateOfBirth"
+          >
         </label>
         <label> I accept the term of the agreement
           <input type="checkbox" id="agreement"
-          required
+          required name="check"
           >
         </label>
       </fieldset>
@@ -41,11 +43,13 @@
         <legend class="title-input">Registration
         </legend>
         <label class="questions">E-mail:
-          <input type="email" placeholder="email@example.com">
+          <input type="email" placeholder="email@example.com"
+          name="email"
+          >
         </label>
         <label>Password:
           <input type="password" minlength="6"
-          maxlength="15"
+          maxlength="15" name="password"
           >
         </label>
       </fieldset>
@@ -61,10 +65,12 @@
           <input type="radio" name="cats">
         </label>
         <label class="questions">What is your favorite color?
-          <input type="color">
+          <input type="color" name="color">
         </label>
         <label class="questions">What time do you go to bed?
-          <input type="time" step="2">
+          <input type="time" step="2"
+          name="sleepTime"
+          >
         </label>
         <label class="questions">What are your favorite brend of cars?
           <select name="cars" size="4"
@@ -80,6 +86,7 @@
         <label>How do you rate your work?
           <input type="range"
           max="100" min="1"
+          name="rate"
           >
         </label>
       </fieldset>
