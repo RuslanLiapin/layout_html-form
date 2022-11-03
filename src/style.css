@@ -1,1 +1,9 @@
 /* styles go here */
+.questions {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pers-inform {
+  margin-bottom: 20px;
+}

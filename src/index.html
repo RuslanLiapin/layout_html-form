@@ -2,16 +2,108 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+      <fieldset class="pers-inform">
+        <legend class="title-input">Personal information</legend>
+        <label class="questions">Surname:
+          <input type="text" id="sur"
+          autocomplete="off"
+          >
+        </label>
+        <label class="questions">Name:
+          <input type="text"
+          autocomplete="off"
+          id="name"
+          >
+        </label>
+        <label class="questions">How old are You?
+          <input type="number" id="age"
+          min="1" max="100"
+          value="12"
+          >
+        </label>
+        <label class="questions">Full date of birth:
+          <input type="date" required>
+        </label>
+        <label> I accept the term of the agreement
+          <input type="checkbox" id="agreement"
+          required
+          >
+        </label>
+      </fieldset>
+      <fieldset class="pers-inform">
+        <legend class="title-input">Registration
+        </legend>
+        <label class="questions">E-mail:
+          <input type="email" placeholder="email@example.com">
+        </label>
+        <label>Password:
+          <input type="password" minlength="6"
+          maxlength="15"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="pers-inform">
+        <legend class="title-input">An interesting fact about you!
+        </legend>
+        <label class="questions">Do you love cats?
+          <label for="cats-yes" id="cats">Yes
+          </label>
+          <input type="radio" name="cats">
+          <label for="cats-no">No
+          </label>
+          <input type="radio" name="cats">
+        </label>
+        <label class="questions">What is your favorite color?
+          <input type="color">
+        </label>
+        <label class="questions">What time do you go to bed?
+          <input type="time" step="2">
+        </label>
+        <label class="questions">What are your favorite brend of cars?
+          <select name="cars" size="4"
+        multiple>
+            <option value="BMV">BMV
+            </option>
+            <option value="Audi">Audi
+            </option>
+            <option value="Lada">Lada
+            </option>
+          </select>
+        </label>
+        <label>How do you rate your work?
+          <input type="range"
+          max="100" min="1"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="pers-inform">
+        <legend class="title-input">Additional info:
+        </legend>
+        <label class="questions">Comments:
+          <textarea name="comment"
+            cols="30"
+            rows="2" autocomplete="off"
+            minlength="20" maxlength="220">
+          </textarea>
+        </label>
+        <label>Would you recommend us?
+          <select name="yes/no" size="1">
+            <option value="yes">yes
+            </option>
+            <option value="no">no
+            </option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit" name="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
