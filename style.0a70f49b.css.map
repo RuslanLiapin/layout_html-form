@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AACA,WACE,aAAc,CACd,kBACF,CAEA,aACE,kBACF","file":"style.0a70f49b.css","sourceRoot":"..\\src","sourcesContent":["/* styles go here */\n.questions {\n  display: block;\n  margin-bottom: 10px;\n}\n\n.pers-inform {\n  margin-bottom: 20px;\n}\n"]}
